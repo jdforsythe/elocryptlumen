@@ -1,0 +1,37 @@
+{
+    "name": "jdforsythe/elocryptlumen",
+    "description": "Automatically encrypt and decrypt Eloquent attributes with ease.",
+    "keywords": ["encrypt", "elocrypt", "eloquent", "lumen", "encryption", "eloquent encryption", "lumen encryption", "lumen aes", "eloquent aes"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jeremy Forsythe",
+            "email": "jdforsythe@gmail.com"
+        },
+        {
+            "name": "Del",
+            "email": "del@babel.com.au"
+        },
+        {
+            "name": "Darren Taylor",
+            "email": "shout@darrenonthe.net"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/contracts": "^5.0",
+        "illuminate/support": "^5.0",
+        "illuminate/encryption": "^5.0",
+        "paragonie/random_compat": "^1.1",
+        "vlucas/phpdotenv": "~2.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jdforsythe\\ElocryptLumen\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
