@@ -9,20 +9,23 @@
          processIsolation="false"
          stopOnFailure="false"
          syntaxCheck="false">
-    <testsuites>
-        <testsuite name="Package Test Suite">
-            <directory suffix=".php">./tests/</directory>
-        </testsuite>
-    </testsuites>
-    <logging>
-        <log type="junit" target="documents/phpunit.xml" />
-    </logging>
-    <filter>
-        <blacklist>
-            <directory>vendor/*</directory>
-        </blacklist>
-        <whitelist processUncoveredFilesFromWhitelist="true">
-            <directory suffix=".php">src/</directory>
-        </whitelist>
-    </filter>
+  <testsuites>
+    <testsuite name="Package Test Suite">
+      <directory suffix=".php">./tests/</directory>
+    </testsuite>
+  </testsuites>
+  <logging>
+    <log type="junit" target="documents/phpunit.xml" />
+  </logging>
+  <filter>
+    <blacklist>
+      <directory>vendor/*</directory>
+    </blacklist>
+    <whitelist processUncoveredFilesFromWhitelist="true">
+      <directory suffix=".php">src/</directory>
+    </whitelist>
+  </filter>
+  <php>
+    <env name="APP_ENV" value="testing"/>
+  </php>
 </phpunit>

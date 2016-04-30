@@ -1,4 +1,5 @@
 # Eloquent Encryption/Decryption for Lumen 5
+[![Build Status](https://travis-ci.org/jdforsythe/elocryptlumen.svg?branch=master)](https://travis-ci.org/jdforsythe/elocryptlumen.svg?branch=master)
 
 Automatically encrypt and decrypt Lumen 5 Eloquent values.
 
@@ -68,7 +69,7 @@ For example:
     class User extends Eloquent {
 
         use Elocrypt;
-       
+
         /**
          * The attributes that should be encrypted on save.
          *
