@@ -16,7 +16,7 @@ class ElocryptTest extends PHPUnit_Framework_TestCase
 {
     protected function doTest($attributes)
     {
-        $dotenv = new Dotenv(__DIR__);
+        $dotenv = new Dotenv(__DIR__ . '/..');
         $dotenv->load();
 
         $model = new DummyModel($attributes);

@@ -4,7 +4,7 @@ php:
   - 5.6
 
 before_script:
-  - cp .env.travis .env
+  - cp .env.test .env
   - composer self-update
   - composer install --no-interaction
 
